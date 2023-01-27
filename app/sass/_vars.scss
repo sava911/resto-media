@@ -1,0 +1,84 @@
+$red:#e82525;
+$black:#333333;
+$bg:#fafcff;
+// // $title-color:#29282d;
+
+%icomoon {
+  font-family: 'icomoon' !important;
+  position: absolute;
+  color: $red;
+}
+
+.title {
+  margin-bottom: 35px;
+  font-size: 46px;
+  line-height: 50px;
+}
+
+%hover {
+
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+
+
+
+    &::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: auto;
+    height: 2px;
+    background-color: $red;
+    bottom: -2px;
+    transition: all 0.3s;
+    right: 0;
+    z-index: 5;
+  }
+
+}
+
+@keyframes animatebutton {
+  0% {
+    left: -80px;
+  }
+
+  33% {
+    left: 120%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+.btn {
+  background-color: $red;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0px 10px 30px -10px $red;
+  position: relative;
+
+  overflow: hidden;
+
+  &:after {
+    z-index: 1;
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 10px;
+    height: 170px;
+    top: -40px;
+    animation: animatebutton 3s infinite;
+    transform: rotate(45deg);
+  }
+}
