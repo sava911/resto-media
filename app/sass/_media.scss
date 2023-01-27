@@ -39,7 +39,7 @@
     // bottom: 0;
     margin-top: 78px;
     width: 100%;
-    background-color: #333;
+    background-color: $black;
 
     >li:nth-child(3) {
       position: relative;
@@ -51,7 +51,7 @@
         position: absolute;
 
         border: 5px solid transparent;
-        border-top: 5px solid #fff;
+        border-top: 5px solid $bg;
         top: 20px;
         left: 115px;
 
@@ -69,7 +69,7 @@
       margin-left: 20px;
       padding: 0.3em 0;
       width: 100%;
-      color: white;
+      color: $bg;
       font-size: 14px;
 
 
@@ -92,7 +92,7 @@
   }
 
   #menu-toggle:checked~.menu li {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $bg;
     height: auto;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -102,13 +102,12 @@
 
     padding: 0.5em 0;
     width: 100%;
-    color: white;
-    // background-color: #e82525;
-    // background-color: #333;
+    color: $bg;
+
   }
 
   .menu>li:not(:last-child) {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid $black;
   }
 
   .banner {
@@ -169,7 +168,20 @@
 
 @media (max-width: 950px) {}
 
-@media (max-width: 900px) {}
+@media (max-width: 900px) {
+  .advanced__items-wrapper {
+    display: block;
+
+
+
+  }
+
+  .bd-top {
+    border-top: 1px solid $bg;
+
+
+  }
+}
 
 @media (max-width: 815px) {
   .header__phone {
