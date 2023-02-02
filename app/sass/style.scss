@@ -318,11 +318,7 @@ body {
 
   }
 
-  &__title {
-    font-size: 36px;
-    line-height: 40px;
-    margin-bottom: 10px;
-  }
+
 
   &__text {
     opacity: 0.8;
@@ -673,6 +669,178 @@ body {
 }
 
 // end advanced
+
+.clients {
+  padding-top: 40px;
+  background: #f7f7f8;
+
+
+
+
+
+  &__btn {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    // color: $bg;
+    background: #c1c1c1;
+    border-radius: 5px;
+    font-weight: 500;
+
+    &:hover {
+      background: $bg;
+      box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3),
+        0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+
+    }
+  }
+
+  button.active-btn[data-tab] {
+    background: $red;
+    color: $bg;
+    pointer-events: none;
+    box-shadow: 0px 10px 30px -10px $red;
+
+  }
+
+
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+
+
+
+  &__item {
+    padding: 3rem 0;
+    text-align: center;
+
+    background: $bg;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3),
+      0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+
+  .tabs>div.active-btn:not([data-tab]) {
+    display: grid;
+
+  }
+
+  .tabs>div:not([data-tab]) {
+
+    display: none;
+
+  }
+
+}
+
+
+
+// end clients
+.blog {
+
+  padding-top: 40px;
+
+
+
+  .filters {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+    overflow-y: hidden;
+  }
+
+
+  &__btn {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    // color: $bg;
+    background: #c1c1c1;
+    border-radius: 5px;
+    font-weight: 500;
+
+    &:hover {
+      background: $bg;
+      box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3),
+        0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+
+    }
+  }
+
+
+
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+
+
+
+  &__item {
+
+
+    cursor: pointer;
+
+
+
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+
+      border-radius: 5px;
+
+    }
+
+
+  }
+
+  &__item-title {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: underline;
+  }
+
+  .tabs {
+    .blog__items {
+      display: none;
+
+      &.blog__active-btn {
+        display: grid;
+      }
+    }
+
+    .blog__btn {
+      cursor: pointer;
+
+      &.blog__active-btn {
+        pointer-events: none;
+        background: $red;
+        color: $bg;
+        box-shadow: 0px 10px 30px -10px $red;
+
+      }
+    }
+  }
+
+}
+
+
+
+// end blog
 
 
 @import "_media";
