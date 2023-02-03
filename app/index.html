@@ -22,45 +22,85 @@
       <div class="container">
         <div class="header__top-inner">
           <div class="header__burger-wrap">
-            <div class="header__burger">
-              <input id="menu-toggle" type="checkbox" />
-              <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-              </label>
 
-              <ul class="menu">
-                <li>СОЗДАНИЕ САЙТОВ</li>
-                <li>ПРОДВИЖЕНИЕ САЙТОВ</li>
-                <li>
-                  <a href="#">РЕКЛАМА</a>
+            <div class="modal-menu">
+              <div class="modal-menu__inner">
+                <div class="close_button"></div>
 
 
-                  <ul class="menu__hover">
+                <ul class="modal-menu__nav">
 
-                    <li>111</li>
-                    <li>ПРОДВИЖЕНИЕ САЙТОВ</li>
-                    <li>РЕКЛАМА</li>
-                    <li>РЕЗУЛЬТАТЫ</li>
-                    <li>ТАРИФЫ</li>
-                    <li>КЕЙСЫ</li>
-                    <li>СТАТЬИ</li>
-                    <li>КОНТАКТЫ</li>
-                  </ul>
-                </li>
+                  <li class="modal-menu__nav__list active"><a class="modal-menu__nav__link" href="catalogs.html"
+                      title="Оплата">готовая
+                      ссылка</a>
+
+                  </li>
+
+                  <li class="modal-menu__nav__list active"><a class="modal-menu__nav__link" href="catalogs.html"
+                      title="Оплата">готовая
+                      ссылка</a>
+
+                  </li>
+                  <li class="modal-menu__nav__list active"><a class="modal-menu__nav__link" href="catalogs.html"
+                      title="Оплата">готовая
+                      ссылка</a>
+
+                  </li>
+                  <li class="modal-menu__nav__list active"><a class="modal-menu__nav__link" href="catalogs.html"
+                      title="Оплата">готовая
+                      ссылка</a>
+
+                  </li>
+
+                  <li class="modal-menu__nav__list active"><a class="modal-menu__nav__link" href="catalogs.html"
+                      title="Оплата">готовая
+                      ссылка</a>
+
+                  </li>
+                  <li class="modal-menu__nav__list active"><a class="modal-menu__nav__link" href="catalogs.html"
+                      title="Оплата">готовая
+                      ссылка</a>
+
+                  </li>
+                  <li class="modal-menu__nav__list active"><a class="modal-menu__nav__link" href="catalogs.html"
+                      title="Оплата">готовая
+                      ссылка</a>
+
+                  </li>
+                </ul>
+
+                <ul class="menu">
+                  <li>СОЗДАНИЕ САЙТОВ</li>
+                  <li>ПРОДВИЖЕНИЕ САЙТОВ</li>
+                  <li>
+                    РЕКЛАМА
 
 
-                <li>РЕЗУЛЬТАТЫ</li>
-                <li>ТАРИФЫ</li>
+                  </li>
 
-                <li>КЕЙСЫ</li>
-                <li>СТАТЬИ</li>
-                <li>КОНТАКТЫ</li>
-              </ul>
 
+                  <li>РЕЗУЛЬТАТЫ</li>
+                  <li>ТАРИФЫ</li>
+
+                  <li>КЕЙСЫ</li>
+                  <li>СТАТЬИ</li>
+                  <li>КОНТАКТЫ</li>
+                </ul>
+                <div class="modal-menu__phone">
+                  <a class="modal-menu__phone__link" href="tel:88007005683">8 800 700 56 83</a>
+                  <div class="modal-menu__callback">
+                    <a class="modal-menu__phone__link mail-icon" href="mailto:sales@pack24.ru">sales@pack24.ru</a>
+                    <button class="modal-menu__phone__link phone-icon btn" href="#callback">Перезвоните мне</button>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end modal-menu -->
 
-            <!-- end header__burger -->
             <a href="#" class="header__logo logo">
+              <div class="header__menu-button__wrapper">
+                <div class="header__menu-button"></div>
+              </div>
               <img src="images/logo.png" width="50px" alt="logo">
               <span>Resto-media</span>
             </a>
@@ -120,6 +160,8 @@
     </div>
     <!-- end header__menu -->
 
+
+
   </header>
 
 
@@ -140,6 +182,7 @@
     </div>
   </div>
   <!-- end modal -->
+
 
 
   <div id="back_to_top" class="back-to-top">
@@ -313,115 +356,118 @@
     <section class="clients">
       <div class="container">
         <h2 class="clients__title title">НАШИ КЛИЕНТЫ</h2>
-        <div class=" tabs">
-          <button data-tab class="clients__btn active-btn">Все клиенты</button>
-          <button data-tab class="clients__btn ">Бренды</button>
-          <button data-tab class="clients__btn ">Бренды</button>
-          <button data-tab class="clients__btn ">Бренды</button>
+        <div class="clients-tabs">
+          <div class="filters">
+            <button data-tab class="clients__btn clients_active-btn">Все клиенты</button>
+            <button data-tab class="clients__btn ">Бренды</button>
+            <button data-tab class="clients__btn ">Бренды</button>
+            <button data-tab class="clients__btn ">Бренды</button>
+          </div>
+          <div class="tabs__list">
+            <div class="clients__items clients_active-btn">
 
-          <div class="clients__items active-btn">
-
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
             </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
+            <div class="clients__items">
+              <div class="clients__item">
+                <img src="images/bridgestone.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
             </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
+            <div class="clients__items">
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
             </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-          </div>
-          <div class="clients__items">
-            <div class="clients__item">
-              <img src="images/bridgestone.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-          </div>
-          <div class="clients__items">
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-          </div>
-          <div class="clients__items">
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
-            </div>
-            <div class="clients__item">
-              <img src="images/beer.webp" alt="clients" class="clients__img">
+            <div class="clients__items">
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
+              <div class="clients__item">
+                <img src="images/beer.webp" alt="clients" class="clients__img">
+              </div>
             </div>
           </div>
         </div>
@@ -443,7 +489,7 @@
             <button data-tab class="blog__btn ">Бренды</button>
           </div>
           <div class="tabs__list ">
-            <a class="single-item blog__items  blog__active-btn ">
+            <a class=" blog__items  blog__active-btn ">
 
               <div class="blog__item  ">
                 <img src="images/blog-item.webp" alt="">
@@ -479,7 +525,7 @@
               </div>
 
             </a>
-            <a class="single-item blog__items  ">
+            <a class=" blog__items  ">
 
               <div class="blog__item  ">
                 <img src="images/blog-item-1.webp" alt="">
@@ -503,7 +549,7 @@
               </div>
 
             </a>
-            <a class="single-item blog__items  ">
+            <a class=" blog__items  ">
 
               <div class="blog__item  ">
                 <img src="images/blog-item.webp" alt="">
@@ -527,7 +573,7 @@
               </div>
 
             </a>
-            <a class="single-item blog__items  ">
+            <a class=" blog__items  ">
 
               <div class="blog__item  ">
                 <img src="images/blog-item.webp" alt="">
@@ -593,18 +639,21 @@
             <span>Resto-media</span>
           </div>
           <div class="footer__top-inner">
-            <div class="footer__top-newslatter footer__top-item">
+            <div class="footer__top-item footer__top-item__nav">
 
-              <a href="index.html" class="footer__top-title">
-                Интернет-магазин воздушных шаров
-              </a>
-              <ul class="footer__top--losts">
-                <li class="footer__top--list footer__maps maps">
-                  <a href="contacts.html" class="footer__top--link">Москва, ул. Ленина 15-3</a>
+
+              <h6 class="footer__top-title">
+                Интернет-магазин
+              </h6>
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__link">Москва, ул. Ленина 15-3</a>
                 </li>
-                <li class="footer__top--list time">Круглосуточно 24/7</li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__link">Круглосуточно 24/7</a>
+                </li>
+
               </ul>
-              <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
             </div>
             <div class="footer__top-item footer__top-item__nav">
               <h6 class="footer__top-title">Информация</h6>
@@ -652,6 +701,27 @@
                 </li>
               </ul>
             </div>
+
+
+            <div class="select collapsed">
+              <div class="shown">Интернет-магазин</div>
+              <div class="option">Москва, ул. Ленина 15-3</div>
+              <div class="option">Круглосуточно 24/7</div>
+
+            </div>
+            <div class="select collapsed">
+              <div class="shown">Информация</div>
+              <div class="option">О компании</div>
+              <div class="option">Отзывы</div>
+              <div class="option">Отзывы</div>
+            </div>
+            <div class="select collapsed">
+              <div class="shown">Информация</div>
+              <div class="option">О компании</div>
+              <div class="option">Отзывы</div>
+              <div class="option">Отзывы</div>
+            </div>
+
             <div class="footer__top-item footer__top-contacts">
               <a href="tel:+89999489598" class="footer__number">7-495-215-27-47</a>
               <a href="mailto:" class="footer__mail">info@shartut.ru</a>
@@ -666,6 +736,7 @@
                 </li>
               </ul>
             </div>
+            <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
 
           </div>
         </div>

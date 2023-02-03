@@ -1,7 +1,6 @@
 html,
 body {
   box-sizing: border-box;
-
   height: 100%;
 }
 
@@ -17,6 +16,7 @@ body {
 *:hover {
   transition: all 0.3s;
 }
+
 
 h1,
 h2,
@@ -167,4 +167,9 @@ button {
   font-family: Manrope, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400
+}
+
+body.lock {
+  // padding-right: 20px;
+  overflow: hidden;
 }

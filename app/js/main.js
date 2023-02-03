@@ -1,5 +1,6 @@
 $(function () {
 
+
   // scroll menu
   if (window.innerWidth > 1276) {
     $(window).scroll(function () {
@@ -21,7 +22,15 @@ $(function () {
     $('.adress').addClass('none');
   }
 
-
+  // modal-menu
+  $('.header__menu-button').on('click', function () {
+    $('.modal-menu').addClass('active');
+    $('body').addClass('lock');
+  });
+  $('.close_button').on('click', function () {
+    $('.modal-menu').removeClass('active');
+    $('body').removeClass('lock');
+  });
 
 
   $('.click').on('click', function () {
@@ -37,11 +46,6 @@ $(function () {
 
 
 
-  $('.menu >li:nth-child(3)').on('click', function (e) {
-    e.preventDefault();
-    let hover = $('.menu__hover')
-    hover.toggleClass('activ');
-  });
 
   // mask
   $.fn.setCursorPosition = function (pos) {
@@ -68,14 +72,14 @@ $(function () {
   }).mask("+7(999) 999-9999");
 
   // tabs
-  $(".tabs button[data-tab]").on("click", function (e) {
-    // clear active classes and set current tab button as active
-    $(this).siblings().removeClass("active-btn");
-    $(this).addClass("active-btn");
-    // activate tab page with the same index as the tab button
-    let tabIndex = $(this).index();
-    $($(this).siblings("div:not([data-tab])")[tabIndex]).addClass("active-btn");
-  });
+  // $(".tabs button[data-tab]").on("click", function (e) {
+  //   // clear active classes and set current tab button as active
+  //   $(this).siblings().removeClass("active-btn");
+  //   $(this).addClass("active-btn");
+  //   // activate tab page with the same index as the tab button
+  //   let tabIndex = $(this).index();
+  //   $($(this).siblings("div:not([data-tab])")[tabIndex]).addClass("active-btn");
+  // });
   // tabs js
   document.querySelectorAll(".filters .blog__btn").forEach(function (tab, index) {
     tab.addEventListener("click", function () {
@@ -91,26 +95,37 @@ $(function () {
         tabContent.classList.remove("blog__active-btn");
       });
       tabs[index].classList.add("blog__active-btn");
-      // slick init on tabs
-      $('.single-item').slick('setPosition')
+
+    });
+  });
+  document.querySelectorAll(".filters .clients__btn").forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      const filters = document.querySelectorAll(".filters .clients__btn");
+      const tabs = document.querySelectorAll(".tabs__list .clients__items");
+
+      filters.forEach(function (tab) {
+        tab.classList.remove("clients_active-btn");
+      });
+      this.classList.add("clients_active-btn");
+
+      tabs.forEach(function (tabContent) {
+        tabContent.classList.remove("clients_active-btn");
+      });
+      tabs[index].classList.add("clients_active-btn");
+
     });
   });
 
-  // slider tabs 
-  if (window.innerWidth < 500) {
-    $('.single-item').slick({
-      // centerMode: true,
-      infinite: false,
-
-      arrows: false,
-      // variableWidth: true,
-      // focusOnSelect: true,
-      // draggable: false,
-      // focusOnSelect: true,
-      slidesToShow: 1.08
-      // useTransform: true,
+  // tabs list
+  document.querySelectorAll(".select").forEach((el) => {
+    el.addEventListener("click", function (e) {
+      if (e.target && e.target.matches(".option")) {
+        this.querySelector(".shown").innerHTML = e.target.innerHTML;
+      }
+      this.classList.toggle("collapsed");
     });
-  }
+  });
+
 
   // uPTop
   $('.back-to-top').click(function () {
