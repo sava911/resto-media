@@ -61,14 +61,6 @@ body {
     align-items: center;
   }
 
-  &__logo {
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-
-
-
-  }
 
   &__adress {
     position: relative;
@@ -152,7 +144,7 @@ body {
 
 
   &__menu-inner {
-    border-top: 1px solid #fff;
+    border-top: 1px solid $bg;
     opacity: 0.3;
   }
 
@@ -283,7 +275,11 @@ body {
 
 
 
-.logo {}
+.logo {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+}
 
 .adress {}
 
@@ -307,7 +303,7 @@ body {
     position: absolute;
     width: 500px;
 
-    border: 1px solid #000;
+    border: 1px solid $black;
     background: $bg;
     top: 100px;
     left: 0;
@@ -333,7 +329,7 @@ body {
 
   &__form-input {
     padding: 20px;
-    border: 1px solid #000;
+    border: 1px solid $black;
     margin-bottom: 20px;
     text-align: left;
   }
@@ -514,7 +510,7 @@ body {
 
   &__form-input {
     padding: 10px 20px;
-    background: #ebebeb;
+    background: $gre;
     margin-bottom: 20px;
     text-align: left;
   }
@@ -788,7 +784,7 @@ body {
 
 
   &__item {
-
+    min-height: 350px;
 
     cursor: pointer;
 
@@ -841,6 +837,264 @@ body {
 
 
 // end blog
+.forms {
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
 
+.form__text {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form__content-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 100%;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 5px 20px;
+  font-size: 16px;
+  line-height: 30px;
+  background: $gre;
+
+
+
+
+
+
+  &::placeholder {
+    color: $black;
+
+  }
+}
+
+.form__btn {
+
+  // width: 460px;
+  // text-align: center;
+  color: $bg;
+  font-size: 16px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 0;
+  border: 2px solid $black;
+  border-radius: 3px;
+  background-color: $bg;
+}
+
+.form__label-text {
+  margin-left: 20px;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid $black;
+  border-width: 0 2px 2px 0;
+
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+
+// end .form block
+
+
+
+.footer {
+
+
+  &__inner {
+    background: $black;
+    color: $bg;
+  }
+
+
+
+  &__bottom {
+    padding: 20px 0 22px;
+    // margin-bottom: 20px;
+
+  }
+
+  &__btn {
+    padding: 10px 25px;
+    width: 100%;
+    text-align: center;
+    color: $bg;
+    font-size: 16px;
+    border: 1px solid $bg;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      transition: all 0.3s;
+      color: $black;
+      background-color: $bg;
+
+    }
+  }
+
+  &__bottom-copy {
+    font-size: 10px;
+    line-height: 12px;
+
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+
+  &__top-title {
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $red;
+  }
+
+  &__top {
+    padding-top: 20px;
+  }
+
+  &__top-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+
+
+
+
+
+
+
+
+  &-list {
+    font-size: 14px;
+    line-height: 22px;
+
+
+
+    li:hover {
+      color: $red;
+
+
+
+    }
+  }
+
+  &__number {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__mail {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+}
+
+.footer__top--img__yandex {
+  cursor: pointer;
+}
+
+.footer__top--losts {
+  margin-bottom: 20px;
+}
+
+.footer__top--list {
+  margin-bottom: 10px;
+}
+
+
+.social-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+
+}
+
+.social-link {
+  position: relative;
+  font-weight: 400;
+  font-size: 15px;
+  transition: all 0.3s;
+  border-radius: 50px;
+  border: 1px solid $bg;
+  padding: 15px;
+  margin-right: 20px;
+
+  &:hover,
+  &:focus {
+    transition: all 0.3s;
+    color: $bg;
+    background-color: $red;
+
+  }
+}
+
+
+.link-wh {
+  &::after {
+    @extend %icomoon;
+    content: "\ea93";
+
+    top: 3px;
+    left: 5px;
+    color: $bg;
+    font-size: 20px;
+  }
+}
+
+
+
+.link-telg {
+  &::after {
+    @extend %icomoon;
+    content: "\ea95";
+    top: 3px;
+    left: 5px;
+    color: $bg;
+    font-size: 20px;
+
+
+  }
+}
+
+
+// end .footer block
 
 @import "_media";

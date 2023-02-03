@@ -62,6 +62,9 @@ $(function () {
   $('#phone-banner').on('click', function () {
     $(this).setCursorPosition(3);
   }).mask("+7(999) 999-9999");
+  $('#phone-footer__form').on('click', function () {
+    $(this).setCursorPosition(3);
+  }).mask("+7(999) 999-9999");
 
   // tabs
   $(".tabs button[data-tab]").on("click", function (e) {
@@ -77,7 +80,7 @@ $(function () {
     tab.addEventListener("click", function () {
       const filters = document.querySelectorAll(".filters .blog__btn");
       const tabs = document.querySelectorAll(".tabs__list .blog__items");
-      console.log(tabs)
+
       filters.forEach(function (tab) {
         tab.classList.remove("blog__active-btn");
       });
@@ -93,7 +96,6 @@ $(function () {
   });
 
   // slider tabs 
-  console.log(window.innerWidth);
   if (window.innerWidth < 500) {
     $('.single-item').slick({
       centerMode: true,
