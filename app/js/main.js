@@ -1,4 +1,5 @@
 $(function () {
+
   // scroll menu
   if (window.innerWidth > 1276) {
     $(window).scroll(function () {
@@ -98,11 +99,16 @@ $(function () {
   // slider tabs 
   if (window.innerWidth < 500) {
     $('.single-item').slick({
-      centerMode: true,
-      focusOnSelect: true,
-      slidesToShow: 1,
-      useTransform: true,
-      arrows: false
+      // centerMode: true,
+      infinite: false,
+
+      arrows: false,
+      // variableWidth: true,
+      // focusOnSelect: true,
+      // draggable: false,
+      // focusOnSelect: true,
+      slidesToShow: 1.08
+      // useTransform: true,
     });
   }
 
