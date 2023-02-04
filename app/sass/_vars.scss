@@ -13,12 +13,6 @@ $gre: #ebebeb;
   color: $red;
 }
 
-.title {
-  margin-bottom: 20px;
-  font-size: 46px;
-  line-height: 50px;
-}
-
 %hover {
 
   transition: all 0.3s;
@@ -86,4 +80,40 @@ $gre: #ebebeb;
     animation: animatebutton 3s infinite;
     transform: rotate(45deg);
   }
+
+}
+
+%banner {
+  background: $black;
+
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-height: 740px;
+  position: relative;
+
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    color: $wh;
+  }
+
+  .breadcrumbs {
+    z-index: 5;
+    position: relative;
+  }
+
+  .breadcrumbs-link {
+    color: $red;
+  }
+
 }

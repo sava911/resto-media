@@ -1,0 +1,298 @@
+.promotion {
+
+
+
+
+  &__banner {
+    @extend %banner;
+    padding-top: 20px;
+
+
+
+  }
+
+  &__banner-inner {
+    padding-top: 100px;
+
+    color: $wh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+  }
+
+  &__banner-title {}
+
+  &__banner-text {
+    margin-bottom: 40px;
+    max-width: 700px;
+  }
+
+  &__banner-btn {
+    width: 300px;
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  // end banner
+
+  &__perfom {
+    padding-top: 40px;
+  }
+
+  &__perfom-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+
+
+  &__perfom-item {
+    padding: 100px 30px 20px;
+    // border: 1px solid $black;
+    border-radius: 5px;
+
+    background: $wh;
+
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    border-top: 5px solid $bgc;
+
+
+    &:hover,
+    &:focus {
+      transform: translateY(-10px);
+      box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
+      border-top: 5px solid $red;
+
+
+    }
+
+    &:nth-child(1) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 40px;
+        left: 40px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 40px;
+        left: 40px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 40px;
+        left: 40px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 40px;
+        left: 40px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(5) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 40px;
+        left: 40px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(6) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 40px;
+        left: 40px;
+
+        font-size: 45px;
+
+      }
+    }
+  }
+
+  &__perfom-item__title {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  &__perfom-item__text {}
+
+  // end perfom
+
+  &__publications {}
+
+  &__publications-title {}
+
+  &__publications-items {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__publications-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 39px 0;
+    border-top: 3px solid $gre;
+
+    &:last-child {
+      border-bottom: 3px solid $gre;
+    }
+
+    &_title {
+      font-weight: 700;
+      font-size: 22px;
+      position: relative;
+
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+
+        left: -80px;
+
+        font-size: 45px;
+
+      }
+    }
+
+  }
+
+  &__publications-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__publications-right {
+    border-left: 3px solid $gre;
+    padding-left: 40px;
+
+  }
+
+  // end publications
+
+  &__stages {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+
+  &__stages-inner {}
+
+  &__Stages-items {
+    counter-reset: num;
+  }
+
+  &__Stages-item {
+    display: flex;
+    position: relative;
+    padding-bottom: 1rem;
+    padding-left: 23px;
+    margin-bottom: 30px;
+
+    &_title {
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    &_text {}
+
+    &::after {
+      counter-increment: num;
+      content: counter(num);
+      display: flex;
+      color: $wh;
+      font-weight: 600;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      background: $red;
+      border-radius: 25px;
+
+    }
+
+    &:before {
+      content: '';
+      border-right: 3px solid $red;
+      margin-right: 40px;
+      padding-bottom: 30px;
+      margin-bottom: -40px;
+      margin-top: 45px;
+      display: block;
+      position: relative;
+      height: auto;
+      background-color: transparent;
+      width: 1px;
+
+    }
+
+    &:last-child {
+      &:before {
+        border: none;
+      }
+    }
+
+  }
+
+
+
+  // end stages
+}

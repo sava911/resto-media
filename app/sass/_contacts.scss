@@ -17,29 +17,32 @@
     min-width: 250px;
     min-height: 250px;
     padding: 80px 10px 20px;
-    border: 1px solid $black;
+    border-top: 5px solid $bgc;
+    background: $wh;
     border-radius: 5px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
     transition: all 0.3s;
     cursor: pointer;
     position: relative;
 
     &:hover,
     &:focus {
-
       transform: translateY(-10px);
       box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
+      border-top: 5px solid $red;
 
     }
 
     &:nth-child(1) {
       &::after {
         @extend %icomoon;
-        content: "\ea93";
+        content: "\ea10";
         color: $red;
 
         top: 30px;
@@ -53,7 +56,7 @@
     &:nth-child(2) {
       &::after {
         @extend %icomoon;
-        content: "\ea93";
+        content: "\ea10";
         color: $red;
 
         top: 30px;
@@ -67,7 +70,7 @@
     &:nth-child(3) {
       &::after {
         @extend %icomoon;
-        content: "\ea93";
+        content: "\ea10";
         color: $red;
 
         top: 30px;
@@ -81,7 +84,7 @@
     &:nth-child(4) {
       &::after {
         @extend %icomoon;
-        content: "\ea93";
+        content: "\ea10";
         color: $red;
 
         top: 30px;
@@ -157,7 +160,7 @@
 
     &::after {
       @extend %icomoon;
-      content: "\ea93";
+      content: "\ea10";
       color: $red;
 
       top: 0;
@@ -173,7 +176,7 @@
 
     &::after {
       @extend %icomoon;
-      content: "\ea93";
+      content: "\ea10";
       color: $red;
       top: 13px;
       left: 0;
@@ -188,7 +191,7 @@
 
     &::after {
       @extend %icomoon;
-      content: "\ea93";
+      content: "\ea10";
       color: $red;
 
       top: 0;

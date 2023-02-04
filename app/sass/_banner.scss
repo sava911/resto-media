@@ -1,15 +1,6 @@
 .banner {
 
-  background: $black;
-
-  background-image: url(../images/banner-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  min-height: 740px;
-  position: relative;
-  padding-top: 150px;
-
+  @extend %banner;
 
   &::before {
     content: "";
