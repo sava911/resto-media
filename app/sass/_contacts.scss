@@ -1,0 +1,204 @@
+.contacts {
+  padding-top: 40px;
+
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    min-width: 250px;
+    min-height: 250px;
+    padding: 80px 10px 20px;
+    border: 1px solid $black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+
+    &:hover,
+    &:focus {
+
+      transform: translateY(-10px);
+      box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
+
+    }
+
+    &:nth-child(1) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea93";
+        color: $red;
+
+        top: 30px;
+        left: 0;
+        right: 0;
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea93";
+        color: $red;
+
+        top: 30px;
+        left: 0;
+        right: 0;
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea93";
+        color: $red;
+
+        top: 30px;
+        left: 0;
+        right: 0;
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea93";
+        color: $red;
+
+        top: 30px;
+        left: 0;
+        right: 0;
+        font-size: 45px;
+
+      }
+    }
+
+  }
+
+  &__item-title {
+    font-weight: 600;
+
+  }
+
+  &__item-text {}
+
+  &__item-btn {
+    padding: 10px 20px;
+  }
+
+  &__item-mail {}
+
+  &__item-tel {
+    font-weight: 700;
+  }
+
+
+
+  &__item-social {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+  }
+
+  &__map {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__map-inner {}
+
+  &__map-item {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+
+
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid $black;
+    background: $wh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+
+  &__map-title {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__map-tel {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      @extend %icomoon;
+      content: "\ea93";
+      color: $red;
+
+      top: 0;
+      left: 0;
+      font-size: 25px;
+
+    }
+  }
+
+  &__map-text {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      @extend %icomoon;
+      content: "\ea93";
+      color: $red;
+      top: 13px;
+      left: 0;
+      font-size: 25px;
+
+    }
+  }
+
+  &__map-time {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      @extend %icomoon;
+      content: "\ea93";
+      color: $red;
+
+      top: 0;
+      left: 0;
+      font-size: 25px;
+
+    }
+  }
+
+  &__map-btn {
+    padding: 10px 20px;
+  }
+}

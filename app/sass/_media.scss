@@ -1,5 +1,3 @@
-@media (max-width: 1376px) {}
-
 @media (max-width: 1276px) {
   body {
     padding-top: 80px;
@@ -185,6 +183,7 @@
 
 }
 
+// end 1276
 @media (max-width: 1200px) {
 
   .adress {
@@ -197,9 +196,16 @@
     gap: 20px;
   }
 
+  .contacts__items {
+
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 10px;
+
+  }
 
 }
 
+// end 1200
 @media (max-width: 1000px) {
   .clients__items {
 
@@ -255,9 +261,7 @@
   }
 }
 
-
-@media (max-width: 950px) {}
-
+// end 1000
 @media (max-width: 900px) {
   .advanced__items-wrapper {
     display: block;
@@ -300,6 +304,7 @@
 
 }
 
+// end 900
 @media (max-width: 815px) {
   .header__phone {
     display: none;
@@ -338,11 +343,13 @@
     line-height: 34px;
   }
 
+  .contacts__map-item {
+    display: none;
+  }
+
 }
 
-
-
-
+// end 815
 @media (max-width: 700px) {
 
   .product__items {
@@ -367,6 +374,7 @@
 
 }
 
+// end 700
 @media (max-width: 650px) {
   body {
     padding-top: 54px;
@@ -415,8 +423,16 @@
     align-items: center;
     text-align: center;
   }
+
+  .contacts__items {
+
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+  }
 }
 
+// end 650
 @media (max-width: 500px) {
 
 
@@ -621,4 +637,4 @@
 
 }
 
-@media (max-width: 361px) {}
+// end 400
