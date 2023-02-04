@@ -1,0 +1,225 @@
+.header {
+  position: absolute;
+  background-color: $black;
+  color: $wh;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+
+  &__top {
+    background-color: $black;
+
+  }
+
+  &__top-inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  &__adress {
+    position: relative;
+
+    &::after {
+      @extend %icomoon;
+
+      content: "\e947";
+      top: 12px;
+      left: -40px;
+      font-size: 30px;
+
+    }
+
+    &::before {
+      @extend %icomoon;
+
+      content: "\e947";
+      top: 12px;
+      left: -40px;
+      font-size: 30px;
+
+    }
+
+  }
+
+  &__phone {
+    position: relative;
+
+    &::after {
+      @extend %icomoon;
+
+      content: "\e942";
+      top: 2px;
+      left: -40px;
+      font-size: 30px;
+
+    }
+  }
+
+  &__phone-icons {
+    display: none;
+    position: relative;
+    background: $red;
+
+    &::after {
+      @extend %icomoon;
+      color: $wh;
+
+      content: "\e942";
+      top: 2px;
+      left: 3px;
+      font-size: 25px;
+
+    }
+  }
+
+  &__btn-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 440px;
+  }
+
+
+
+  &__btn {
+    padding: 0 20px;
+    height: 30px;
+  }
+
+  &__social,
+  &__burger {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+
+
+
+  }
+
+
+  &__menu-inner {
+    border-top: 1px solid $wh;
+    opacity: 0.3;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+
+    >li:nth-child(3) {
+      position: relative;
+
+
+
+      &::after {
+        content: '';
+        position: absolute;
+
+        border: 5px solid transparent;
+        border-top: 5px solid $wh;
+        top: 20px;
+        left: 105px;
+
+
+      }
+    }
+
+    >li {
+      // display: inline-block;
+      padding: 10px 0;
+      @extend %hover;
+
+
+    }
+
+
+  }
+
+  &__hover-menu {
+    display: none;
+    padding: 5px;
+    background: $wh;
+    color: $black;
+    position: absolute;
+    z-index: 6;
+    width: 310px;
+    left: -95px;
+    top: 42px;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3),
+      0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+
+
+
+    li {
+      padding: 5px 10px;
+      text-align: center;
+      @extend %hover;
+
+    }
+
+  }
+
+  &__hover-menu__lists {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      z-index: 6;
+
+      border: 10px solid transparent;
+      border-bottom: 10px solid $wh;
+      top: -23px;
+      left: 136px;
+    }
+
+  }
+
+  &__burger-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+}
+
+.whatsapp {
+  background: #25D366;
+  position: relative;
+
+  &::after {
+    @extend %icomoon;
+    content: "\ea93";
+    color: $wh;
+    top: 2px;
+    left: 5px;
+    font-size: 20px;
+
+  }
+}
+
+.telegram {
+  background: #229ED9;
+  position: relative;
+
+  &::after {
+    @extend %icomoon;
+    content: "\ea95";
+    color: $wh;
+    top: 2px;
+    left: 5px;
+    font-size: 20px;
+
+  }
+
+}

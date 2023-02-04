@@ -1,6 +1,10 @@
 @media (max-width: 1376px) {}
 
 @media (max-width: 1276px) {
+  body {
+    padding-top: 80px;
+  }
+
   .header__logo img {
     display: none;
   }
@@ -364,6 +368,10 @@
 }
 
 @media (max-width: 650px) {
+  body {
+    padding-top: 54px;
+  }
+
   .clients__items {
 
     grid-template-columns: repeat(2, 1fr);

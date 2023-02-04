@@ -1,0 +1,178 @@
+.footer {
+
+
+  &__inner {
+    background: $black;
+    color: $wh;
+  }
+
+
+
+  &__bottom {
+    padding: 20px 0 22px;
+    // margin-bottom: 20px;
+
+  }
+
+  &__btn {
+    padding: 10px 25px;
+    width: 100%;
+    text-align: center;
+    color: $wh;
+    font-size: 16px;
+    border: 1px solid $wh;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      transition: all 0.3s;
+      color: $black;
+      background-color: $wh;
+
+    }
+  }
+
+  &__bottom-copy {
+    font-size: 10px;
+    line-height: 12px;
+
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+
+  &__top-title {
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $red;
+
+  }
+
+  &__top {
+    padding-top: 20px;
+  }
+
+  &__top-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+
+
+
+
+
+
+
+
+  &-list {
+
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+
+
+
+    li:hover {
+      color: $red;
+
+
+
+    }
+  }
+
+  &__number {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__mail {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+
+
+}
+
+.select {
+  display: none;
+}
+
+.footer__top--img__yandex {
+  cursor: pointer;
+}
+
+.footer__top--losts {
+  margin-bottom: 20px;
+}
+
+
+
+.social-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+
+}
+
+.social-link {
+  position: relative;
+  font-weight: 400;
+  font-size: 15px;
+  transition: all 0.3s;
+  border-radius: 50px;
+  border: 1px solid $wh;
+  padding: 15px;
+  margin-right: 20px;
+
+  &:hover,
+  &:focus {
+    transition: all 0.3s;
+    color: $wh;
+    background-color: $red;
+
+  }
+}
+
+
+.link-wh {
+  &::after {
+    @extend %icomoon;
+    content: "\ea93";
+
+    top: 3px;
+    left: 5px;
+    color: $wh;
+    font-size: 20px;
+  }
+}
+
+
+
+.link-telg {
+  &::after {
+    @extend %icomoon;
+    content: "\ea95";
+    top: 3px;
+    left: 5px;
+    color: $wh;
+    font-size: 20px;
+
+
+  }
+}
+
+
+// end .footer block

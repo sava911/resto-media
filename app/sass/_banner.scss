@@ -1,0 +1,105 @@
+.banner {
+
+  background: $black;
+
+  background-image: url(../images/banner-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-height: 740px;
+  position: relative;
+  padding-top: 150px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+  }
+
+
+
+  &__inner {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+
+
+  }
+
+  &__info {
+    width: 600px;
+    color: $wh;
+
+  }
+
+  &__title {}
+
+  &__text {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      @extend %icomoon;
+      content: "\ea10";
+      top: 2px;
+      left: 0;
+      font-size: 16px;
+
+    }
+  }
+
+  &__form-inner {
+    background-color: $wh;
+    width: 500px;
+    padding: 60px 40px 80px;
+    border-radius: 15px;
+    position: relative;
+
+
+  }
+
+  &__form {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // padding: 25px;
+  }
+
+  &__form-input {
+    padding: 10px 20px;
+    background: $gre;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+
+
+  &__btn {
+    padding: 20px;
+
+    color: $wh;
+  }
+
+  &__img-inner {
+    position: absolute;
+    width: 210px;
+    margin: auto;
+    bottom: -65px;
+    left: 20px;
+    right: 0;
+  }
+
+
+}

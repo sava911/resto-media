@@ -173,3 +173,39 @@ body.lock {
   // padding-right: 20px;
   overflow: hidden;
 }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.24em;
+  color: $black;
+
+  background: $bgc;
+  display: flex;
+  flex-direction: column;
+  padding-top: 125px;
+
+}
+
+
+
+.main {
+  flex-grow: 1;
+
+}
+
+.container {
+  padding: 0 30px;
+  max-width: 1430px;
+  margin: 0 auto;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
