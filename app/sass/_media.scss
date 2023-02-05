@@ -189,6 +189,17 @@
 
     width: 100%;
 
+    &::after {
+
+      top: 19px;
+
+    }
+
+    .plus {
+
+      top: 20px;
+
+    }
   }
 }
 
@@ -210,6 +221,16 @@
     grid-template-columns: repeat(2, 1fr);
     // gap: 10px;
 
+  }
+
+}
+
+// end 1200
+@media (max-width: 1050px) {
+  .ads__items {
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
 }
@@ -278,6 +299,7 @@
 
   }
 }
+
 
 // end 1000
 @media (max-width: 900px) {
@@ -392,8 +414,103 @@
 }
 
 // end 815
+@media (max-width: 770px) {
+  .declaration {
+
+
+
+
+    &__baner {
+      margin: 180px auto 40px;
+
+      // margin-top: 180px;
+      background-size: 300px;
+      background-position: center 0;
+      text-align: center;
+      min-height: 300px;
+      position: relative;
+      width: 340px;
+
+      p {
+
+        width: 100%;
+      }
+    }
+
+
+    &__ar-1 {
+      transform: rotate(297deg);
+      top: -80px;
+      left: auto;
+      right: -15%;
+    }
+
+    &__ar-2 {
+      display: none;
+
+    }
+
+    &__ar-3 {
+      background: url(../images/ar-4.png) no-repeat 0 0 transparent;
+
+      transform: rotate(69deg);
+      top: -8px;
+
+      left: -18%;
+
+    }
+
+    &__ar-4 {
+      transform: rotate(256deg);
+      top: 70px;
+      right: -15%;
+    }
+
+    &__ar-5 {
+      display: none;
+    }
+
+    &__ar-6 {
+      background: url(../images/ar-1.png) no-repeat 0 0 transparent;
+      transform: rotate(129deg);
+      right: auto;
+      left: -18%;
+      top: 161px;
+
+    }
+
+    &__text-1 {
+      margin: -130px 0 0;
+
+    }
+
+    &__text-2 {
+      margin: -76px 0 0;
+
+    }
+
+    &__text-3 {
+      margin: -40px 0 0;
+    }
+
+    &__text-4 {
+      margin: 165px 0 0;
+    }
+
+    &__text-5 {
+      margin: 20px 0 0;
+    }
+
+    &__text-6 {
+      margin: 20px 0 0;
+    }
+  }
+}
+
+// end 770
 @media (max-width: 700px) {
 
+  .ads__items,
   .promotion__perfom-items,
   .cerm__rate-items {
 
@@ -487,12 +604,16 @@
 
 // end 650
 @media (max-width: 500px) {
-  .plus {
-
-    right: 0;
+  .ads__item {
+    padding: 80px 20px 20px;
+    min-height: 400px;
 
   }
 
+  .plus {
+    right: 5px;
+
+  }
 
   .header__logo span {
     font-size: 0;
@@ -680,7 +801,10 @@
 // end 500
 
 @media (max-width: 400px) {
+  .declaration__baner {
 
+    width: auto;
+  }
 
   .title {
     font-size: 24px;
@@ -696,4 +820,10 @@
 
 // end 400
 
-@media (max-width: 350px) {}
+@media (max-width: 350px) {
+  .declaration__baner {
+    span {
+      display: none;
+    }
+  }
+}

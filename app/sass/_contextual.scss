@@ -1,0 +1,184 @@
+.ads {
+  &__title {}
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    counter-reset: num;
+
+  }
+
+  &__item {
+    background: $wh;
+    padding: 80px 40px 20px;
+    min-height: 500px;
+    border-radius: 5px;
+    position: relative;
+    border-top: 5px solid $bgc;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-10px);
+      box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
+      border-top: 5px solid $red;
+    }
+
+    &::after {
+      counter-increment: num;
+      content: counter(num);
+      font-size: 60px;
+      color: $red;
+      font-weight: 700;
+
+      position: absolute;
+      right: 35px;
+      top: 25px;
+
+
+
+
+    }
+
+  }
+
+  &__item-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  &__item-list {
+    padding-left: 40px;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    li::before {
+      content: "\2022";
+      color: $red;
+      font-weight: 700;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+
+// end ads
+
+.declaration {
+  padding-top: 40px;
+
+  &__title {}
+
+  &__baner {
+    position: relative;
+    background: no-repeat center 66px transparent;
+    background-size: 55%;
+    margin-top: 70px;
+    min-height: 500px;
+
+    span {
+      position: absolute;
+      background-size: 100%;
+      height: 60px;
+      width: 130px;
+    }
+
+    p {
+      clear: both;
+    }
+  }
+
+
+  &__ar-1 {
+    background: url(../images/ar-1.png) no-repeat 0 0 transparent;
+    transform: rotate(225deg);
+    top: 27px;
+    left: 20%;
+
+  }
+
+  &__ar-2 {
+    background: url(../images/ar-2.png) no-repeat 0 0 transparent;
+    top: 115px;
+    left: 15%;
+  }
+
+  &__ar-3 {
+    background: url(../images/ar-2.png) no-repeat 0 0 transparent;
+    transform: rotate(330deg);
+    top: 190px;
+    left: 15%;
+
+  }
+
+  &__ar-4 {
+    background: url(../images/ar-4.png) no-repeat 0 0 transparent;
+    transform: rotate(140deg);
+    top: 20px;
+    right: 23%;
+
+  }
+
+  &__ar-5 {
+    background: url(../images/ar-2.png) no-repeat 0 0 transparent;
+
+    transform: rotate(180deg);
+    top: 127px;
+    right: 15%;
+  }
+
+  &__ar-6 {
+    background: url(../images/ar-2.png) no-repeat 0 0 transparent;
+    transform: rotate(200deg);
+    top: 253px;
+    right: 20%;
+  }
+
+  &__text-1 {
+    float: left;
+    width: 270px;
+    margin: 17px 0 0 17px;
+
+  }
+
+  &__text-2 {
+    float: left;
+    width: 20%;
+    margin: 5% 0 0 -1%;
+
+
+
+  }
+
+  &__text-3 {
+    float: left;
+    width: 20%;
+    margin: 4% 0 0 1%;
+
+  }
+
+  &__text-4 {
+    float: right;
+    width: 285px;
+    margin: -290px 36px 0 0px;
+
+  }
+
+  &__text-5 {
+    float: right;
+    width: 225px;
+    margin: -162px -15px 0 0px;
+
+  }
+
+  &__text-6 {
+    float: right;
+    width: 20%;
+    margin: -1% 0 0 0;
+
+  }
+}
