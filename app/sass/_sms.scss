@@ -1,0 +1,82 @@
+.questions {
+  &__title {}
+
+  &__items {
+
+    counter-reset: num;
+  }
+
+  &__item {
+    display: inline-block;
+
+
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 45px;
+    background: $wh;
+    box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
+    position: relative;
+    border-radius: 5px;
+
+    vertical-align: top;
+    width: 573px;
+
+
+    &::after {
+      counter-increment: num;
+      content: counter(num);
+      display: flex;
+      color: $wh;
+      font-weight: 600;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin: auto;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+
+
+      width: 29px;
+      height: 30px;
+      background: $red;
+      border-radius: 25px;
+
+
+
+    }
+
+    &:nth-child(2n+1) {
+      clear: both;
+      margin-left: 0;
+    }
+
+
+  }
+
+  &__item-subtext {
+    font-weight: 600;
+    transition: all 0.3s;
+
+    &.opened .plus {
+      color: red;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__item-text {
+    padding-top: 10px;
+  }
+}
+
+.plus {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  width: 29px;
+  height: 30px;
+  font-size: 34px;
+  font-weight: 700;
+}

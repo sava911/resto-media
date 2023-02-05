@@ -1,20 +1,10 @@
 {
-  "name": "shophtmlsitemarco",
+  "name": "resto-media",
   "version": "1.0.0",
   "description": "site shop html scss js",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sava911/shopHtmlSiteMarco.git"
-  },
-  "keywords": [],
-  "author": "Sava911",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sava911/shopHtmlSiteMarco/issues"
   },
   "homepage": "https://sava911.github.io/resto-media",
   "devDependencies": {

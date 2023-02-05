@@ -1,0 +1,156 @@
+.cerm {
+
+
+  &__rate {
+    padding-top: 40px;
+  }
+
+  &__rate-title {}
+
+  &__rate-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__rate-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px;
+    background: $wh;
+    padding: 80px 20px 40px;
+    position: relative;
+    border-top: 5px solid $bgc;
+    border-radius: 5px;
+
+
+
+    &:hover,
+    &:focus {
+      transform: translateY(-10px);
+      box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
+      border-top: 5px solid $red;
+
+
+    }
+
+    &:nth-child(1) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 30px;
+        left: 30px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 30px;
+        left: 30px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        @extend %icomoon;
+        content: "\ea10";
+        color: $red;
+
+        top: 30px;
+        left: 30px;
+
+        font-size: 45px;
+
+      }
+    }
+
+    &_top {}
+
+
+
+    &_title {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    &_text {
+      margin-bottom: 20px;
+
+    }
+
+
+    &_list {
+      padding-left: 30px;
+
+      li {
+        margin-bottom: 10px;
+        position: relative;
+
+        &::after {
+          @extend %icomoon;
+          content: "\ea10";
+          color: $red;
+
+          top: 0px;
+          left: -25px;
+
+          font-size: 20px;
+
+
+        }
+      }
+
+
+
+    }
+
+    &_bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &_suptext {
+      margin-bottom: 10px;
+    }
+
+    &_sale {
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: $red;
+      font-size: 24px;
+    }
+
+    &_btn {
+      padding: 10px 0;
+    }
+  }
+
+}
+
+.move {
+  position: absolute;
+  top: 84px;
+  left: 108px;
+  opacity: 0.8;
+  width: 20px;
+  height: 20px;
+  background: $red;
+  color: $wh;
+  border-radius: 20px;
+
+}

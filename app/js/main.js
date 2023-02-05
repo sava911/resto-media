@@ -142,6 +142,15 @@ $(function () {
     }
   });
 
+  // popup qs
+  $(".questions__item-subtext").click(function () {
+    $(this).parent().find(".questions__item-text").slideToggle();
+    $(this).toggleClass("opened");
+    return false;
+  });
+
+
+
 
 })
 

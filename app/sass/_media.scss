@@ -184,6 +184,15 @@
 }
 
 // end 1276
+@media (max-width: 1212px) {
+  .questions__item {
+
+    width: 100%;
+
+  }
+}
+
+// end 1210
 @media (max-width: 1200px) {
 
   .adress {
@@ -207,7 +216,9 @@
 
 // end 1200
 @media (max-width: 1000px) {
-  .promotion__perfom-items {
+
+  .promotion__perfom-items,
+  .cerm__rate-items {
 
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -382,10 +393,16 @@
 
 // end 815
 @media (max-width: 700px) {
-  .promotion__perfom-items {
+
+  .promotion__perfom-items,
+  .cerm__rate-items {
 
     grid-template-columns: 1fr;
 
+  }
+
+  .cerm__rate-item {
+    min-height: 520px;
   }
 
   .product__items {
@@ -470,6 +487,11 @@
 
 // end 650
 @media (max-width: 500px) {
+  .plus {
+
+    right: 0;
+
+  }
 
 
   .header__logo span {
