@@ -1,6 +1,6 @@
 @media (max-width: 1276px) {
   body {
-    padding-top: 80px;
+    border-top: 80px solid $black;
   }
 
   .header__logo img {
@@ -429,7 +429,7 @@
       text-align: center;
       min-height: 300px;
       position: relative;
-      width: 340px;
+      width: 330px;
 
       p {
 
@@ -547,7 +547,7 @@
 // end 700
 @media (max-width: 650px) {
   body {
-    padding-top: 54px;
+    border-top: 54px solid $black;
   }
 
   .clients__items {
@@ -801,6 +801,7 @@
 // end 500
 
 @media (max-width: 400px) {
+
   .declaration__baner {
 
     width: auto;
