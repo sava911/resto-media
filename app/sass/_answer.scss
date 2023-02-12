@@ -1,0 +1,40 @@
+.answer {
+  background: $red;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+
+  &__img {}
+
+  &__info {}
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    margin-bottom: 20px;
+  }
+
+  &__form-input {
+    background: $wh;
+    padding: 20px;
+    width: 280px;
+    margin-right: 18px;
+
+  }
+
+  &__btn {
+    padding: 20px;
+    background: $black;
+    width: 280px;
+
+  }
+
+  &__text {
+    max-width: 500px;
+  }
+}

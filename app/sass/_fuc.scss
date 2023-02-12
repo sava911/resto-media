@@ -44,17 +44,21 @@
   overflow-y: hidden;
 }
 
-.none {
+.none,
+.logo-min {
   display: none;
 }
 
-
-
-.logo {
-  font-size: 26px;
-  display: flex;
-  align-items: center;
+hr {
+  opacity: 0.3;
 }
+
+
+// .logo {
+//   font-size: 26px;
+//   display: flex;
+//   align-items: center;
+// }
 
 
 

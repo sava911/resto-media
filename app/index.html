@@ -24,6 +24,10 @@
             <div class="modal-menu">
               <div class="modal-menu__inner">
                 <div class="close_button"></div>
+                <a href="#" class="modal-menu__logo logo">
+
+                  <img class="logo-big" src="images/logo.png" alt="logo">
+                </a>
 
 
                 <ul class="modal-menu__nav">
@@ -99,14 +103,12 @@
             </div>
             <a href="#" class="header__logo logo">
 
-              <img src="images/logo.png" width="50px" alt="logo">
-              <span>Resto-media</span>
+              <img class="logo-big" src="images/logo.png" alt="logo">
+              <img class="logo-min" src="images/logo-min.png" alt="logo">
             </a>
           </div>
 
-          <a href="#" class="header__adress adress">
-            г. Москва<br>ул. Новгородская, д. 1, лит. А
-          </a>
+
           <div class="header__btn-inner">
             <a href="tel:88003011779" class="header__phone phone">8 (800)
               301-17-79
@@ -127,8 +129,7 @@
     <div class="header__menu">
 
       <div class="container">
-        <div class="header__menu-inner">
-        </div>
+        <hr>
         <nav>
           <ul class="header__lists">
             <li><a href="company.html">company.html</a></li>
@@ -177,6 +178,7 @@
         <form class="modal__form">
           <input class="modal__form-input" type="text" name="name" required placeholder="Имя">
           <input class="modal__form-input" id="phone-modal" type="text" name="phone" required placeholder="Телефон">
+          <textarea class="modal__form-input" type="text" required placeholder="Просто оставьте*"></textarea>
           <button class="modal__btn btn" type="submit">Заказать обратный звонок</button>
         </form>
         <p class="modal__text">Заполняя форму вы даете согласие
@@ -288,16 +290,19 @@
             <h4 class="product__item-subtitle">SEO-продвижение</h4>
           </a>
         </div>
+        <div class="product__btn-inner">
+          <a href="#" class="product_btn btn">НАШИ КЛИЕНТЫ</a>
+        </div>
       </div>
     </section>
     <!-- end product -->
 
     <section class="advanced">
-      <div class="container">
-        <h2 class="advanced__title title">Вне зависимости от того</h2>
-      </div>
+
       <div class="advanced__inner">
         <div class="container">
+          <h2 class="advanced__title title">Вне зависимости от того</h2>
+
           <div class="advanced__items-wrapper">
             <div class="advanced__items">
               <div class="advanced__item">
@@ -355,6 +360,7 @@
       </div>
     </section>
     <!-- end advanced -->
+
 
     <section class="clients">
       <div class="container">
@@ -477,6 +483,29 @@
       </div>
     </section>
     <!-- end clients -->
+    <section class="answer">
+      <div class="container">
+        <div class="answer__inner">
+          <img src="images/banner-1.jpg" alt="" width="280px" height="300px" class="answer__img">
+          <div class="answer__info">
+            <h2 class="answer__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+            <form class="answer__form">
+              <input class="answer__form-input" type="text" name="name" required placeholder="Имя">
+              <input class="answer__form-input" id="phone-answer" type="text" name="phone" required
+                placeholder="Телефон">
+            </form>
+            <form class="answer__form">
+              <input class="answer__form-input" type="email" name="email" pattern=".+@globex\" required placeholder="@">
+              <button class="answer__btn btn" type="submit">Получить клиентов</button>
+            </form>
+            <p class="answer__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi tenetur enim
+              optio aspernatur quae </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end answer  -->
     <section class="blog">
       <div class="container">
         <h2 class="blog__title title">СТАТЬИ</h2>
@@ -638,8 +667,8 @@
       <div class="container">
         <div class="footer__top">
           <div class="footer__logo logo">
-            <img src="images/logo.png" width="50px" alt="logo">
-            <span>Resto-media</span>
+            <img src="images/logo.png" alt="logo">
+            <!-- <span>Resto-media</span> -->
           </div>
           <div class="footer__top-inner">
             <div class="footer__top-item footer__top-item__nav">
@@ -714,7 +743,7 @@
             </div>
             <div class="select collapsed">
               <div class="shown">Информация</div>
-              <div class="option">О компании</div>
+              <a href="influence.html" class="option">О компании</a>
               <div class="option">Отзывы</div>
               <div class="option">Отзывы</div>
             </div>
@@ -726,8 +755,8 @@
             </div>
 
             <div class="footer__top-item footer__top-contacts">
-              <a href="tel:+89999489598" class="footer__number">7-495-215-27-47</a>
-              <a href="mailto:" class="footer__mail">info@shartut.ru</a>
+              <a href="tel:+89999489598" class="footer__number">8-495-215-27-47</a>
+              <!-- <a href="mailto:" class="footer__mail">info@shartut.ru</a> -->
               <button class="footer__btn btn click">Перезвоните мне</button>
               <ul class="social-lists">
                 <li class="social-list">
@@ -737,13 +766,23 @@
                 <li class="social-list">
                   <a href="#" class="social-link link-telg"></a>
                 </li>
+                <li class="social-list">
+                  <a href="#" class="social-link link-telg"></a>
+                </li>
+                <li class="social-list">
+                  <a href="#" class="social-link link-telg"></a>
+                </li>
               </ul>
             </div>
-            <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
-
+            <div class="footer__img-inner">
+              <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
+              <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
+            </div>
           </div>
         </div>
+        <hr>
         <div class="footer__bottom">
+
           <p class="footer__bottom-copy">
             Мы получаем и обрабатываем персональные данные посетителей нашего
             сайта в соответствии с официальной политикой.

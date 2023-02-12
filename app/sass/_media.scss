@@ -3,8 +3,12 @@
     border-top: 80px solid $black;
   }
 
-  .header__logo img {
+  .header__logo .logo-big {
     display: none;
+  }
+
+  .header__logo .logo-min {
+    display: block;
   }
 
 
@@ -33,6 +37,7 @@
   .modal-menu.active {
     display: block;
 
+
   }
 
 
@@ -41,7 +46,6 @@
 
   .modal-menu {
     position: fixed;
-
 
 
   }
@@ -145,6 +149,12 @@
     -o-transition: all .3s;
     transition: all .3s;
     margin-bottom: 10px;
+  }
+
+  .modal-menu__logo {
+    position: absolute;
+    top: 10px;
+    left: 50px;
   }
 
   //  end .modal-menu
@@ -615,19 +625,19 @@
 
   }
 
-  .header__logo span {
-    font-size: 0;
-    position: relative;
+  // .header__logo span {
+  //   // font-size: 0;
+  //   position: relative;
 
-    &::after {
-      content: 'DG';
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-size: 30px;
+  //   &::after {
+  //     content: 'RM';
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     font-size: 30px;
 
-    }
-  }
+  //   }
+  // }
 
   .title {
     font-size: 28px;
@@ -707,6 +717,7 @@
   .footer {
     &__top-item {
       display: none;
+
     }
 
     &__top-contacts {
@@ -718,9 +729,10 @@
 
   .select {
     display: block;
+    text-align: left;
     // width: 300px;
     border-radius: 5px;
-    border: 1px solid $red;
+    border-bottom: 1px solid $red;
     overflow: hidden;
     color: #ffffff;
     font-weight: 300px;

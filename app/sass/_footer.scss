@@ -54,6 +54,7 @@
 
   &__top {
     padding-top: 20px;
+    margin-bottom: 20px;
   }
 
   &__top-inner {
@@ -63,7 +64,10 @@
   }
 
 
-
+  &__top-contacts {
+    min-width: 280px;
+    text-align: center;
+  }
 
 
 
@@ -86,8 +90,9 @@
   }
 
   &__number {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 500;
+    margin-bottom: 20px;
   }
 
   &__mail {
@@ -120,7 +125,7 @@
 
 .social-lists {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 20px;
 
@@ -130,12 +135,11 @@
 .social-link {
   position: relative;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 30px;
   transition: all 0.3s;
-  border-radius: 50px;
+  border-radius: 5px;
   border: 1px solid $wh;
-  padding: 15px;
-  margin-right: 20px;
+  padding: 20px;
 
   &:hover,
   &:focus {
@@ -152,10 +156,9 @@
     @extend %icomoon;
     content: "\ea93";
 
-    top: 3px;
+    top: 8px;
     left: 5px;
     color: $wh;
-    font-size: 20px;
   }
 }
 
@@ -165,14 +168,14 @@
   &::after {
     @extend %icomoon;
     content: "\ea95";
-    top: 3px;
+    top: 8px;
     left: 5px;
     color: $wh;
-    font-size: 20px;
 
 
   }
 }
+
 
 
 // end .footer block

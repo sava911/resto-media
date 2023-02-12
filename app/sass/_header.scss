@@ -47,6 +47,7 @@
 
   &__phone {
     position: relative;
+    font-size: 20px;
 
     &::after {
       @extend %icomoon;
@@ -101,10 +102,7 @@
   }
 
 
-  &__menu-inner {
-    border-top: 1px solid $wh;
-    opacity: 0.3;
-  }
+
 
   &__lists {
     display: flex;

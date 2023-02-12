@@ -71,16 +71,7 @@ $(function () {
     $(this).setCursorPosition(3);
   }).mask("+7(999) 999-9999");
 
-  // tabs
-  // $(".tabs button[data-tab]").on("click", function (e) {
-  //   // clear active classes and set current tab button as active
-  //   $(this).siblings().removeClass("active-btn");
-  //   $(this).addClass("active-btn");
-  //   // activate tab page with the same index as the tab button
-  //   let tabIndex = $(this).index();
-  //   $($(this).siblings("div:not([data-tab])")[tabIndex]).addClass("active-btn");
-  // });
-  // tabs js
+
   document.querySelectorAll(".filters .blog__btn").forEach(function (tab, index) {
     tab.addEventListener("click", function () {
       const filters = document.querySelectorAll(".filters .blog__btn");
@@ -120,7 +111,7 @@ $(function () {
   document.querySelectorAll(".select").forEach((el) => {
     el.addEventListener("click", function (e) {
       if (e.target && e.target.matches(".option")) {
-        this.querySelector(".shown").innerHTML = e.target.innerHTML;
+        // this.querySelector(".shown").innerHTML = e.target.innerHTML;
       }
       this.classList.toggle("collapsed");
     });

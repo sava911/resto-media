@@ -1,9 +1,10 @@
 .advanced {
-  padding-top: 40px;
 
   &__title {}
 
   &__inner {
+  padding-top: 40px;
+
     background: $black;
     color: $wh;
 
@@ -13,7 +14,7 @@
     display: flex;
     // justify-content: space-between;
     // flex-wrap: wrap;
-    padding: 40px 0;
+  padding-bottom: 40px;
   }
 
   &__items {
