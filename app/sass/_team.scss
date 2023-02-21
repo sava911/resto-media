@@ -1,20 +1,12 @@
-.questions {
-  padding-top: 40px;
-  background: $black;
-
-  &__title {
-    color: $wh;
-  }
+.vacancies {
+  &__title {}
 
   &__items {
-
     counter-reset: num;
+
   }
 
   &__item {
-    display: inline-block;
-
-
     margin-bottom: 20px;
     padding: 20px;
     padding-left: 45px;
@@ -24,7 +16,7 @@
     border-radius: 5px;
 
     vertical-align: top;
-    width: 48%;
+
 
 
     &::after {
@@ -53,12 +45,15 @@
       margin-left: 0;
     }
 
-
   }
 
   &__item-subtext {
-    font-weight: 600;
-    transition: all 3.3s;
+    font-weight: 700;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 24px;
 
     &.opened .plus {
       color: red;
@@ -68,13 +63,10 @@
 
   &__item-text {
     padding-top: 10px;
+
   }
 }
 
-.plus {
-  position: absolute;
-  right: 15px;
-  top: 20px;
-  font-size: 34px;
-  font-weight: 700;
-}
+
+
+.plus {}

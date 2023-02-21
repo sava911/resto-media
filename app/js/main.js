@@ -143,6 +143,13 @@ $(function () {
     return false;
   });
 
+  // popup qs
+  $(".vacancies__item-title").click(function () {
+    $(this).parent().find(".vacancies__item-text").slideToggle();
+    $(this).toggleClass("opened");
+    return false;
+  });
+
 
 
 

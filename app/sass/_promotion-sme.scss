@@ -4,6 +4,7 @@
 
 
   &__banner {
+    margin-bottom: 40px;
     @extend %banner;
     padding-top: 20px;
 
@@ -47,6 +48,8 @@
     gap: 30px;
     margin-bottom: 80px;
   }
+
+
 
 
 
@@ -297,4 +300,10 @@
 
 
   // end stages
+}
+
+.services.promotion__perfom-items {
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }

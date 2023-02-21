@@ -1,147 +1,62 @@
-.company__banner,
-.sale__banner {
-  background-repeat: no-repeat;
-  height: 408px;
-  margin-bottom: 20px;
-  transition: all 0.3s;
-  background-size: cover;
+.associations {
+  margin-bottom: 40px;
 
+  &__title {}
 
-  &:hover,
-  &:focus {
-    border-color: #F5BFBA;
-    -webkit-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
-    -moz-box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
-    box-shadow: 0px 2px 10px 0px rgba(33, 33, 33, 0.2);
-    z-index: 3;
-    transition: all 0.3s;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    // padding-top: 20px;
   }
+
+
+
+
+  &__item {
+    padding: 3rem 0;
+    text-align: center;
+
+    background: $wh;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3),
+      0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+
+  &__img {}
 }
 
-.company__banner {
-  background-image: url(../images/company-banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.story {
+  margin-bottom: 40px;
 
-}
-
-
-.company__banner--title {
-  padding: 32px 32px 0;
-  max-width: 700px;
-  font-size: 30px;
-  line-height: 34px;
-
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  margin-bottom: 90px;
-}
-
-
-
-.company__banner--items {
-  display: flex;
-  margin-left: 32px;
-
-}
-
-.company__banner--item {
-  display: flex;
-  // width: 25%;
-}
-
-.company__banner--img {
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
-
-.company__banner--item__inner {
-  max-width: 190px;
-}
-
-.company__banner--item__title {
-  font-size: 30px;
-}
-
-.company__block--text {
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: 400;
-
-  text-align: center;
-
-  display: block;
-}
-
-
-// end company__banner block
-.company {
-  &__info {}
+  &__title {}
 
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-
-
-  }
-
-  &__item {
-    padding: 20px;
-    transition: all 0.3s;
-    cursor: pointer;
-    border: 1px solid $black;
-    border-radius: 5px;
-
-    &:hover,
-    &:focus {
-
-      transform: translateY(-10px);
-      box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
-
-    }
-
-  }
-
-  &__item--color {}
-
-  &__item--title {
-    font-weight: 600;
-    font-size: 24px;
+    gap: 20px;
     margin-bottom: 20px;
+
   }
 
-  &__item--text {}
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-  &__item--color--orange {}
+  &__item {}
+
+  &__num {
+
+    font-weight: 700;
+    font-size: 24px;
+
+    color: $red;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $red;
+  }
+
+  &__text {}
 }
-
-
-
-.icon-users {
-  background-image: url(../images/icon-users.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 58px;
-  height: 46px;
-}
-
-.icon-car {
-  background-image: url(../images/icon-car.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 58px;
-  height: 46px;
-}
-
-.icon-like {
-  background-image: url(../images/icon-like.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 68px;
-  height: 46px;
-}
-
-// end company__info block
