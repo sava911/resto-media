@@ -7,23 +7,28 @@
     padding: 40px 0;
   }
 
-  &__img {}
+  &__img {
+    border-radius: 5px;
+
+  }
 
   &__info {}
 
   &__title {
+    color: $wh;
+
     margin-bottom: 20px;
   }
 
-  &__form {
-    margin-bottom: 20px;
-  }
+  &__form {}
 
   &__form-input {
     background: $wh;
     padding: 20px;
     width: 280px;
     margin-right: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 
   }
 
@@ -35,6 +40,7 @@
   }
 
   &__text {
+    color: $wh;
     max-width: 500px;
   }
 }

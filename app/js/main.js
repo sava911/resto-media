@@ -70,6 +70,9 @@ $(function () {
   $('#phone-footer__form').on('click', function () {
     $(this).setCursorPosition(3);
   }).mask("+7(999) 999-9999");
+  $('#phone-answer').on('click', function () {
+    $(this).setCursorPosition(3);
+  }).mask("+7(999) 999-9999");
 
 
   document.querySelectorAll(".filters .blog__btn").forEach(function (tab, index) {

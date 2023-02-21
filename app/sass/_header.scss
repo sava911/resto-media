@@ -110,7 +110,7 @@
 
     >li:nth-child(3) {
       position: relative;
-
+      padding-right: 10px;
 
 
       &::after {
@@ -120,7 +120,7 @@
         border: 5px solid transparent;
         border-top: 5px solid $wh;
         top: 20px;
-        left: 105px;
+        right: -10px;
 
 
       }
@@ -139,45 +139,33 @@
 
   &__hover-menu {
     display: none;
+    border-top: 3px solid $red;
+
     padding: 5px;
     background: $wh;
     color: $black;
     position: absolute;
     z-index: 6;
     width: 310px;
-    left: -95px;
+    left: 0px;
     top: 42px;
-    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-      0 8px 16px -8px rgba(0, 0, 0, 0.3),
-      0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    border-radius: 5px;
+
 
 
 
     li {
       padding: 5px 10px;
-      text-align: center;
-      @extend %hover;
+
+      &:hover {
+        color: $red;
+      }
 
     }
 
   }
 
-  &__hover-menu__lists {
-    position: relative;
 
-    &::before {
-      content: '';
-      position: absolute;
-
-      z-index: 6;
-
-      border: 10px solid transparent;
-      border-bottom: 10px solid $wh;
-      top: -23px;
-      left: 136px;
-    }
-
-  }
 
   &__burger-wrap {
     display: flex;

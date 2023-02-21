@@ -54,14 +54,29 @@ hr {
 }
 
 
-// .logo {
-//   font-size: 26px;
-//   display: flex;
-//   align-items: center;
-// }
+.text-typing {
+  width: 40em;
 
+  font-size: 22px;
+  font-family: 'Marck Script', cursive;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(50, end);
+  animation: type 5s steps(50, end);
+  animation-iteration-count: infinite;
+}
 
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
 
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
 
 
 
