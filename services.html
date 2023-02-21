@@ -24,10 +24,6 @@
             <div class="modal-menu">
               <div class="modal-menu__inner">
                 <div class="close_button"></div>
-                <a href="#" class="modal-menu__logo logo">
-
-                  <img class="logo-big" src="images/logo.png" alt="logo">
-                </a>
 
 
                 <ul class="modal-menu__nav">
@@ -103,12 +99,14 @@
             </div>
             <a href="#" class="header__logo logo">
 
-              <img class="logo-big" src="images/logo.png" alt="logo">
-              <img class="logo-min" src="images/logo-min.png" alt="logo">
+              <img src="images/logo.png" width="50px" alt="logo">
+              <span>Resto-media</span>
             </a>
           </div>
 
-
+          <a href="#" class="header__adress adress">
+            г. Москва<br>ул. Новгородская, д. 1, лит. А
+          </a>
           <div class="header__btn-inner">
             <a href="tel:88003011779" class="header__phone phone">8 (800)
               301-17-79
@@ -129,37 +127,30 @@
     <div class="header__menu">
 
       <div class="container">
-        <hr>
+        <div class="header__menu-inner">
+        </div>
         <nav>
           <ul class="header__lists">
-            <li><a href="company.html">company.html</a></li>
+            <li><a href="company.html">СОЗДАНИЕ САЙТОВ</a></li>
             <li><a href="promotion-sme.html"> promotion</a></li>
 
-            <li>
-              <a href="influence.html">infadfaluence</a>
+            <li>РЕКЛАМА
               <div class="header__hover-menu">
                 <ul class="header__hover-menu__lists">
-                  <li><a href="contextual.html">contextual</a></li>
-                  <li>
-                    <a href="blog-list.html">blog-list</a>
-                  </li>
-                  <li>
-                    <a href="blog-list-copy.html">blog-listsss</a>
-                  </li>
-                  <li><a href="team.html">team</a>
-                  </li>
-                  <li>
-                    <a href="services.html">services</a>
-                  </li>
+                  <li>СОЗДАНИЕ САЙТОВ</li>
+                  <li>РЕКЛАМА</li>
+                  <li>РЕЗУЛЬТАТЫ</li>
+                  <li>ТАРИФЫ</li>
+                  <li>КЕЙСЫ</li>
                   <li>СТАТЬИ</li>
                   <li>КОНТАКТЫ</li>
                 </ul>
               </div>
             </li>
-            <li><a href="cerm.html">cerm.html</a></li>
-            <li><a href="tg-advertising.html">tg-advertising</a></li>
-            <li><a href="sms.html">sms</a></li>
-            <li><a href="target.html">target</a></li>
+            <li>РЕЗУЛЬТАТЫ</li>
+            <li>ТАРИФЫ</li>
+            <li>КЕЙСЫ</li>
+            <li>СТАТЬИ</li>
             <li><a href="contacts.html"> contacts</a> </li>
           </ul>
         </nav>
@@ -170,7 +161,7 @@
 
 
   </header>
-
+  <!-- end header -->
 
   <div class="modal">
     <div class="modal__wrapper">
@@ -181,7 +172,6 @@
         <form class="modal__form">
           <input class="modal__form-input" type="text" name="name" required placeholder="Имя">
           <input class="modal__form-input" id="phone-modal" type="text" name="phone" required placeholder="Телефон">
-          <textarea class="modal__form-input" type="text" required placeholder="Просто оставьте*"></textarea>
           <button class="modal__btn btn" type="submit">Заказать обратный звонок</button>
         </form>
         <p class="modal__text">Заполняя форму вы даете согласие
@@ -190,9 +180,6 @@
     </div>
   </div>
   <!-- end modal -->
-
-
-
   <div id="back_to_top" class="back-to-top">
     <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24"
       viewBox="0 0 24 24">
@@ -205,35 +192,30 @@
 
 
   <main class="main">
-
-    <section class="banner" style=" background-image: url(../images/banner-1.jpg);">
+    <section class="promotion__banner" style=" background-image: url(../images/banner-1.jpg);">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs-items">
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link active" href="#">О компании</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end breadcrumbs -->
       <div class="container">
-        <div class="banner__inner">
-          <div class="banner__info">
-            <h1 class="banner__title title">Создание сайтов под
-              ключ в Москве</h1>
-
-            <p class="banner__text text-typing">Умеем сайты с уникальным дизайном, внедряем все адаптивы</p>
-            <p class="banner__text">Делаем разработку проектов любой сложности!</p>
-          </div>
-          <div class="banner__form-inner">
-            <form class="banner__form">
-              <input class="banner__form-input" type="text" name="name" required placeholder="Имя">
-              <input class="banner__form-input" id="phone-banner" type="text" name="phone" required
-                placeholder="Телефон">
-              <button class="banner__btn btn" type="submit">Получить клиентовк</button>
-            </form>
-            <div class="banner__img-inner">
-              <img src="./images/gogle.png" width="100px" alt="img gogle">
-              <img src="./images/yandex.png" width="100px" alt="img yandex">
-            </div>
-          </div>
+        <div class="promotion__banner-inner">
+          <h1 class="promotion__banner-title title">SEO-продвижение сайтов в Новосибирске</h1>
+          <p class="promotion__banner-text">Мы предлагаем полный комплекс работ по продвижению сайтов разных типов в
+            поисковых системах Яндекс и Google. Создадим
+            уникальную стратегию, оптимизируем ресурс по техническим параметрам, проработаем контент и юзабилити —
+            словом,
+            сделаем
+            все, чтобы вывести ваш сайт в топы поисковых систем.</p>
+          <button class="promotion__banner-btn btn click">Заказать</button>
         </div>
       </div>
     </section>
-    <!-- end banner -->
-
-
+    <!-- end promotion-sme__banner -->
     <section class="product">
       <div class="container">
         <h2 class="product__title title">Инструменты для продвижения</h2>
@@ -299,349 +281,146 @@
       </div>
     </section>
     <!-- end product -->
-
-    <section class="advanced">
-
-      <div class="advanced__inner">
-        <div class="container">
-          <h2 class="advanced__title title">Вне зависимости от того</h2>
-
-          <div class="advanced__items-wrapper">
-            <div class="advanced__items">
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-            </div>
-            <div class="advanced__items bd-top">
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-            </div>
-            <div class="advanced__items bd-top">
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-              <div class="advanced__item">
-                <span>01</span>
-                <p class="advanced__text">Аудит вашей <br>ниши</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end advanced -->
-
-
-    <section class="clients">
+    <section class="promotion__perfom">
       <div class="container">
-        <h2 class="clients__title title">НАШИ КЛИЕНТЫ</h2>
-        <div class="clients-tabs">
-          <div class="filters">
-            <button data-tab class="clients__btn clients_active-btn">Все клиенты</button>
-            <button data-tab class="clients__btn ">Бренды</button>
-            <button data-tab class="clients__btn ">Бренды</button>
-            <button data-tab class="clients__btn ">Бренды</button>
+        <h2 class="promotion__perfom-title title"> КАКИЕ РАБОТЫ МЫ ВЫПОЛНЯЕМ</h2>
+        <div class="services promotion__perfom-items">
+          <div class="promotion__perfom-item">
+            <h3 class="promotion__perfom-item__title">
+              Реклама в других Telegram-каналах
+            </h3>
+            <p class="promotion__perfom-item__text">
+              Продумаем и реализуем конкурсные механики и партнерские интеграции, которые дадут органический прирост
+              аудитории и
+              увеличат вовлеченность
+            </p>
           </div>
-          <div class="tabs__list">
-            <div class="clients__items clients_active-btn">
-
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-            </div>
-            <div class="clients__items">
-              <div class="clients__item">
-                <img src="images/bridgestone.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-            </div>
-            <div class="clients__items">
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-            </div>
-            <div class="clients__items">
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-              <div class="clients__item">
-                <img src="images/beer.webp" alt="clients" class="clients__img">
-              </div>
-            </div>
+          <div class="promotion__perfom-item">
+            <h3 class="promotion__perfom-item__title">
+              Реклама в других Telegram-каналах
+            </h3>
+            <p class="promotion__perfom-item__text">
+              Продумаем и реализуем конкурсные механики и партнерские интеграции, которые дадут органический прирост
+              аудитории и
+              увеличат вовлеченность
+            </p>
+          </div>
+          <div class="promotion__perfom-item">
+            <h3 class="promotion__perfom-item__title">
+              Реклама в других Telegram-каналах
+            </h3>
+            <p class="promotion__perfom-item__text">
+              Продумаем и реализуем конкурсные механики и партнерские интеграции, которые дадут органический прирост
+              аудитории и
+              увеличат вовлеченность
+            </p>
+          </div>
+          <div class="promotion__perfom-item">
+            <h3 class="promotion__perfom-item__title">
+              Реклама в других Telegram-каналах
+            </h3>
+            <p class="promotion__perfom-item__text">
+              Продумаем и реализуем конкурсные механики и партнерские интеграции, которые дадут органический прирост
+              аудитории и
+              увеличат вовлеченность
+            </p>
+          </div>
+          <div class="promotion__perfom-item">
+            <h3 class="promotion__perfom-item__title">
+              Реклама в других Telegram-каналах
+            </h3>
+            <p class="promotion__perfom-item__text">
+              Продумаем и реализуем конкурсные механики и партнерские интеграции, которые дадут органический прирост
+              аудитории и
+              увеличат вовлеченность
+            </p>
+          </div>
+          <div class="promotion__perfom-item">
+            <h3 class="promotion__perfom-item__title">
+              Реклама в других Telegram-каналах
+            </h3>
+            <p class="promotion__perfom-item__text">
+              Продумаем и реализуем конкурсные механики и партнерские интеграции, которые дадут органический прирост
+              аудитории и
+              увеличат вовлеченность
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- end clients -->
-    <section class="answer">
+    <!-- end promotion-perfom -->
+    <section class="questions">
       <div class="container">
-        <div class="answer__inner">
-          <img src="images/banner-1.jpg" alt="" width="280px" height="300px" class="answer__img">
-          <div class="answer__info">
-            <h2 class="answer__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-            <form class="answer__form">
-              <input class="answer__form-input" type="text" name="name" required placeholder="Имя">
-              <input class="answer__form-input" id="phone-answer" type="text" name="phone" required
-                placeholder="Телефон">
-            </form>
-            <form class="answer__form">
-              <input class="answer__form-input" type="email" name="email" pattern=".+@globex\" required placeholder="@">
-              <button class="answer__btn btn" type="submit">Получить клиентов</button>
-            </form>
-            <p class="answer__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi tenetur enim
-              optio aspernatur quae </p>
+        <h2 class="questions__title title">
+          Часто задаваемые вопросы
+        </h2>
+        <div class="questions__items">
+          <div class="questions__item">
+            <p class="questions__item-subtext">Как мне начать зарабатывать со своего сайта? <span class="plus">+</span>
+            </p>
+            <p class="questions__item-text" style="display: none;">
+              После того, как сайт будет полностью готов к приему посетителей, вы можете
+              выбрать любой способ его монетизации. Рекламное агентство «Digital Context» занимается не только
+              изготовлением
+              сайтов, но и их полноценным продвижением. Кроме этого мы отлично настраиваем контекстную рекламу. Поэтому
+              обязательно поможем вам начать зарабатывать с сайта как можно скорее.
+            </p>
           </div>
-
+          <!-- end questions__item -->
+          <div class="questions__item">
+            <p class="questions__item-subtext">Как мне начать зарабатывать со своего сайта? <span class="plus">+</span>
+            </p>
+            <p class="questions__item-text" style="display: none;">
+              После того, как сайт будет полностью готов к приему посетителей, вы можете
+              выбрать любой способ его монетизации. Рекламное агентство «Digital Context» занимается не только
+              изготовлением
+              сайтов, но и их полноценным продвижением. Кроме этого мы отлично настраиваем контекстную рекламу. Поэтому
+              обязательно поможем вам начать зарабатывать с сайта как можно скорее.
+            </p>
+          </div>
+          <!-- end questions__item -->
+          <div class="questions__item">
+            <p class="questions__item-subtext">Как мне начать зарабатывать со своего сайта? <span class="plus">+</span>
+            </p>
+            <p class="questions__item-text" style="display: none;">
+              После того, как сайт будет полностью готов к приему посетителей, вы можете
+              выбрать любой способ его монетизации. Рекламное агентство «Digital Context» занимается не только
+              изготовлением
+              сайтов, но и их полноценным продвижением. Кроме этого мы отлично настраиваем контекстную рекламу. Поэтому
+              обязательно поможем вам начать зарабатывать с сайта как можно скорее.
+            </p>
+          </div>
+          <!-- end questions__item -->
+          <div class="questions__item">
+            <p class="questions__item-subtext">Как мне начать зарабатывать со своего сайта? <span class="plus">+</span>
+            </p>
+            <p class="questions__item-text" style="display: none;">
+              После того, как сайт будет полностью готов к приему посетителей, вы можете
+              выбрать любой способ его монетизации. Рекламное агентство «Digital Context» занимается не только
+              изготовлением
+              сайтов, но и их полноценным продвижением. Кроме этого мы отлично настраиваем контекстную рекламу. Поэтому
+              обязательно поможем вам начать зарабатывать с сайта как можно скорее.
+            </p>
+          </div>
+          <!-- end questions__item -->
+          <div class="questions__item">
+            <p class="questions__item-subtext">Как мне начать зарабатывать со своего сайта? <span class="plus">+</span>
+            </p>
+            <p class="questions__item-text" style="display: none;">
+              После того, как сайт будет полностью готов к приему посетителей, вы можете
+              выбрать любой способ его монетизации. Рекламное агентство «Digital Context» занимается не только
+              изготовлением
+              сайтов, но и их полноценным продвижением. Кроме этого мы отлично настраиваем контекстную рекламу. Поэтому
+              обязательно поможем вам начать зарабатывать с сайта как можно скорее.
+            </p>
+          </div>
+          <!-- end questions__item -->
         </div>
       </div>
     </section>
-    <!-- end answer  -->
-    <section class="blog">
-      <div class="container">
-        <h2 class="blog__title title">СТАТЬИ</h2>
-        <div class="tabs">
-
-          <div class="filters">
-            <button data-tab class="blog__btn blog__active-btn">Все клиенты</button>
-            <button data-tab class="blog__btn ">Бренды</button>
-            <button data-tab class="blog__btn ">Бренды</button>
-            <button data-tab class="blog__btn ">Бренды</button>
-            <button data-tab class="blog__btn ">Бренды</button>
-            <button data-tab class="blog__btn ">Бренды</button>
-            <button data-tab class="blog__btn ">Бренды</button>
-          </div>
-          <div class="tabs__list ">
-            <a class=" blog__items  blog__active-btn ">
-
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">КАК ВЫДЕЛИТЬСЯ В СОЦИАЛЬНЫХ СЕТЯХ, ЕСЛИ ВЫ УЖЕ ВСЕ ПРОБОВАЛИ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-
-            </a>
-            <a class=" blog__items  ">
-
-              <div class="blog__item  ">
-                <img src="images/blog-item-1.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-
-            </a>
-            <a class=" blog__items  ">
-
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-
-            </a>
-            <a class=" blog__items  ">
-
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-              <div class="blog__item  ">
-                <img src="images/blog-item.webp" alt="">
-                <h3 class="blog__item-title">ЧТО ТАКОЕ ТРЕНДВОТЧИНГ</h3>
-              </div>
-
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-
+    <!-- end questions-->
   </main>
-
+  <!-- end main -->
   <footer class="footer">
     <section class="forms">
       <div class="container">
@@ -670,8 +449,8 @@
       <div class="container">
         <div class="footer__top">
           <div class="footer__logo logo">
-            <img src="images/logo.png" alt="logo">
-            <!-- <span>Resto-media</span> -->
+            <img src="images/logo.png" width="50px" alt="logo">
+            <span>Resto-media</span>
           </div>
           <div class="footer__top-inner">
             <div class="footer__top-item footer__top-item__nav">
@@ -746,7 +525,7 @@
             </div>
             <div class="select collapsed">
               <div class="shown">Информация</div>
-              <a href="influence.html" class="option">О компании</a>
+              <div class="option">О компании</div>
               <div class="option">Отзывы</div>
               <div class="option">Отзывы</div>
             </div>
@@ -758,8 +537,8 @@
             </div>
 
             <div class="footer__top-item footer__top-contacts">
-              <a href="tel:+89999489598" class="footer__number">8-495-215-27-47</a>
-              <!-- <a href="mailto:" class="footer__mail">info@shartut.ru</a> -->
+              <a href="tel:+89999489598" class="footer__number">7-495-215-27-47</a>
+              <a href="mailto:" class="footer__mail">info@shartut.ru</a>
               <button class="footer__btn btn click">Перезвоните мне</button>
               <ul class="social-lists">
                 <li class="social-list">
@@ -769,23 +548,13 @@
                 <li class="social-list">
                   <a href="#" class="social-link link-telg"></a>
                 </li>
-                <li class="social-list">
-                  <a href="#" class="social-link link-telg"></a>
-                </li>
-                <li class="social-list">
-                  <a href="#" class="social-link link-telg"></a>
-                </li>
               </ul>
             </div>
-            <div class="footer__img-inner">
-              <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
-              <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
-            </div>
+            <img class="footer__top--img__yandex" src="images/yret.jpg" width="120px" height="40px" alt="" />
+
           </div>
         </div>
-        <hr>
         <div class="footer__bottom">
-
           <p class="footer__bottom-copy">
             Мы получаем и обрабатываем персональные данные посетителей нашего
             сайта в соответствии с официальной политикой.
@@ -803,13 +572,9 @@
       </div>
     </div>
   </footer>
-
-
+  <!-- end footer -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-
-
-
   <script src="js/main.min.js"></script>
 </body>
 
