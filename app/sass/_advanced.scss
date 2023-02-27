@@ -1,20 +1,18 @@
 .advanced {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: $black;
+  color: $wh;
 
   &__title {}
 
-  &__inner {
-  padding-top: 40px;
-
-    background: $black;
-    color: $wh;
-
-  }
+  &__inner {}
 
   &__items-wrapper {
     display: flex;
     // justify-content: space-between;
     // flex-wrap: wrap;
-  padding-bottom: 40px;
+
   }
 
   &__items {
@@ -26,6 +24,7 @@
     padding: 25px 0 24px 0;
     display: flex;
 
+
     span {
       font-weight: 600;
       font-size: 42px;
@@ -36,6 +35,10 @@
 
   &__item~&__item {
     border-top: 1px solid $wh;
+  }
+
+  &__text {
+    width: 350px;
   }
 
 

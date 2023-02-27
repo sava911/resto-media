@@ -1,5 +1,6 @@
 .associations {
-  margin-bottom: 40px;
+  padding-top: 50px;
+  margin-bottom: 50px;
 
   &__title {}
 
@@ -16,7 +17,7 @@
   &__item {
     padding: 3rem 0;
     text-align: center;
-
+    border-radius: 5px;
     background: $wh;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
       0 8px 16px -8px rgba(0, 0, 0, 0.3),
@@ -27,7 +28,8 @@
 }
 
 .story {
-  margin-bottom: 40px;
+  padding-top: 50px;
+  margin-bottom: 70px;
 
   &__title {}
 

@@ -13,7 +13,7 @@
   }
 
   &__top-inner {
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +48,7 @@
   &__phone {
     position: relative;
     font-size: 20px;
+    font-weight: 700;
 
     &::after {
       @extend %icomoon;

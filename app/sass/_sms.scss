@@ -1,5 +1,6 @@
 .questions {
-  padding-top: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: $black;
 
   &__title {
@@ -13,7 +14,7 @@
 
   &__item {
     display: inline-block;
-
+    margin-left: 20px;
 
     margin-bottom: 20px;
     padding: 20px;

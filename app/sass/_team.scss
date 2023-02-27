@@ -1,4 +1,7 @@
 .vacancies {
+  padding-top: 50px;
+  margin-bottom: 70px;
+
   &__title {}
 
   &__items {
@@ -10,7 +13,7 @@
     margin-bottom: 20px;
     padding: 20px;
     padding-left: 45px;
-    background: $wh;
+    background: $bl;
     box-shadow: 0 17px 19px rgb(0 0 0 / 20%);
     position: relative;
     border-radius: 5px;
@@ -45,10 +48,6 @@
       margin-left: 0;
     }
 
-  }
-
-  &__item-subtext {
-    font-weight: 700;
   }
 
   &__item-title {

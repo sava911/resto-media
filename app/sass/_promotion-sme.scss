@@ -58,7 +58,7 @@
     // border: 1px solid $black;
     border-radius: 5px;
 
-    background: $wh;
+    background: $bl;
 
     transition: all 0.3s;
     cursor: pointer;
@@ -171,7 +171,8 @@
   // end perfom
 
   &__publications {
-    padding-top: 40px;
+    padding-top: 50px;
+    margin-bottom: 50px;
   }
 
   &__publications-title {}
@@ -229,8 +230,9 @@
   // end publications
 
   &__stages {
-    padding-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $bl;
   }
 
 
@@ -249,6 +251,7 @@
     margin-bottom: 30px;
 
     &_title {
+      padding-top: 15px;
       font-weight: 700;
       font-size: 22px;
       margin-bottom: 10px;

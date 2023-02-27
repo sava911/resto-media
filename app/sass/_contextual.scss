@@ -1,4 +1,7 @@
 .ads {
+  padding-top: 50px;
+  margin-bottom: 50px;
+
   &__title {}
 
   &__items {
@@ -10,7 +13,7 @@
   }
 
   &__item {
-    background: $wh;
+    background: $bl;
     padding: 80px 40px 20px;
     min-height: 500px;
     border-radius: 5px;
@@ -32,7 +35,7 @@
       font-weight: 700;
 
       position: absolute;
-      right: 35px;
+      left: 35px;
       top: 25px;
 
 
@@ -44,12 +47,12 @@
 
   &__item-title {
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 25px;
   }
 
   &__item-list {
-    padding-left: 40px;
+    padding-left: 20px;
 
     li {
       margin-bottom: 10px;
