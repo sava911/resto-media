@@ -74,6 +74,14 @@ input {
   box-sizing: border-box;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent
+}
+
 .feedback-form {
   width: 400px;
   max-width: 100%;
@@ -112,13 +120,7 @@ input {
 }
 
 
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent
-}
+
 
 .feedback-form__button {
   width: 100%;
@@ -215,4 +217,8 @@ body {
   margin-bottom: 40px;
   font-size: 46px;
   line-height: 50px;
+}
+
+#faq {
+  display: none;
 }

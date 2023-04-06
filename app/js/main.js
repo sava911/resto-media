@@ -208,6 +208,32 @@ $(function () {
     document.body.appendChild(css);
   };
 
+  // accordion
+  $(document).ready(function () {
+    $(".klundesaga-title").click(function (e) {
+      var klundesagaitem = $(this).attr("data-tab");
+      $("#" + klundesagaitem)
+        .slideToggle()
+        .parent()
+        .siblings()
+        .find(".klundesaga-content")
+        .slideUp();
+
+      $(this).toggleClass("active-title");
+      $("#" + klundesagaitem)
+        .parent()
+        .siblings()
+        .find(".klundesaga-title")
+        .removeClass("active-title");
+
+      $("i.fa-chevron-down", this).toggleClass("chevron-top");
+      $("#" + klundesagaitem)
+        .parent()
+        .siblings()
+        .find(".klundesaga-title i.fa-chevron-down")
+        .removeClass("chevron-top");
+    });
+  });
 
 
 

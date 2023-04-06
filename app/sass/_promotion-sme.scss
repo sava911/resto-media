@@ -39,14 +39,15 @@
   // end banner
 
   &__perfom {
-    padding-top: 40px;
+    padding-top: 50px;
+    margin-bottom: 50px;
   }
 
   &__perfom-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
   }
 
 

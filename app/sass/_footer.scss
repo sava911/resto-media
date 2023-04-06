@@ -1,234 +1,69 @@
 .footer {
+  padding: 50px 0;
+  background: $black;
+  color: $wh;
 
-  padding-top: 50px;
-
-  &__inner {
-    background: $black;
-    color: $wh;
+  &__logo {
+    margin-bottom: 20px;
   }
 
-
-
-  &__bottom {
-    padding: 20px 0 22px;
-    // margin-bottom: 20px;
-
+  &__items {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__btn {
-    padding: 10px 25px;
+  &__item {}
+
+  &__item-title {
     margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-    color: $wh;
-    font-size: 16px;
-    border: 1px solid $wh;
-    transition: all 0.3s;
-
-    &:hover,
-    &:focus {
-      transition: all 0.3s;
-      color: $black;
-      background-color: $wh;
-
-    }
   }
 
-  .btn-pdf {
+  &__list {}
+
+  &__item-phone {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+
+  &__item-mail {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+
+
+
+  }
+
+  &__item-btn~&__item-btn {
     background: $wh;
     color: $black;
-    border-radius: 5px;
-    font-weight: 700;
+  }
 
-    &:hover,
-    &:focus {
-      transition: all 0.3s;
-      color: $wh;
-      background: $red;
+  &__item-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+
+    li~li {
+      margin-left: 5px;
     }
   }
 
-  &__bottom-copy {
-    font-size: 10px;
-    line-height: 12px;
-
-    margin-bottom: 5px;
-
-  }
-
-  &__top-title {
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 16px;
-    // color: $red;
-    width: 280px;
-  }
-
-  &__top {
+  &__info {
     padding-top: 20px;
     margin-bottom: 20px;
   }
 
-  &__top-inner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-  }
-
-
-  &__top-contacts {
-    width: 280px;
-    text-align: center;
-    margin-left: 20px;
-  }
-
-
-
-
-
-  &-list {
-
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 10px;
-
-
-
-    li:hover {
-      color: $red;
-
-
-
-    }
-  }
-
-  &__adress {
-    padding-top: 25px;
-  }
-
-  &__top-item__nav {
-    margin-left: 140px;
-  }
-
-  &__number {
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-
-  &__mail {
-    display: block;
-    text-decoration: underline;
-    margin-bottom: 10px;
-  }
-
-  &__logo {
-    margin-bottom: 10px;
-  }
-
-
-
-}
-
-.select {
-  display: none;
-}
-
-.footer__top--img__yandex {
-  cursor: pointer;
-}
-
-.footer__top--losts {
-  margin-bottom: 20px;
-}
-
-
-
-.social-lists {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // padding-top: 20px;
-
-
-}
-
-.social-link {
-  position: relative;
-  font-weight: 400;
-  font-size: 20px;
-  transition: all 0.3s;
-  border-radius: 5px;
-  border: 1px solid $wh;
-  padding: 15px;
-
-  &:hover,
-  &:focus {
-    transition: all 0.3s;
-    color: $wh;
-    background-color: $red;
-
+  &__copy-text {
+    padding-top: 20px;
   }
 }
-
-
-.link-wh {
-  &::after {
-    @extend %icomoon;
-    content: "\ea93";
-
-    top: 3px;
-    left: 5px;
-    color: $wh;
-  }
-}
-
-
-
-.link-telg {
-  &::after {
-    @extend %icomoon;
-    content: "\ea95";
-    top: 3px;
-    left: 5px;
-    color: $wh;
-
-
-  }
-}
-
-.icon-maps {
-  position: relative;
-  margin-left: 20px;
-  margin-bottom: 10px;
-
-  &::after {
-    @extend %icomoon;
-    content: "\ea95";
-    top: 3px;
-    left: -20px;
-    color: $wh;
-
-
-  }
-}
-
-.icon-time {
-  position: relative;
-  margin-left: 20px;
-
-  &::after {
-    @extend %icomoon;
-    content: "\ea95";
-    top: 3px;
-    left: -20px;
-    color: $wh;
-
-
-  }
-}
-
-
-// end .footer block
